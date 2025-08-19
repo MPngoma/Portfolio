@@ -1,0 +1,183 @@
+/* General Styles */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@import url("https://use.typekit.net/shd0xtp.css");
+
+body {
+    font-family:'Ailero', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f7f6f2;
+    background-color: #0e2148;
+}
+
+
+
+/* #main{
+    height: 100vh;
+} */
+
+h1, h2{
+    color: #e3d095;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: normal;
+    font-size: 4rem;
+    width: 500px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+}
+.profile img{
+    height: 12rem;
+    width: 12rem;
+}
+
+.titles{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:start;
+}
+
+.titles h3{
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+}
+
+.titles p{
+    margin: 0;
+    color: #e3d095;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.graduation img{
+    height: 100%;
+    width: 100%;
+}
+
+.graduation{
+    /* display: flex; */
+    margin-top: 4rem;
+    align-items: start;
+    padding-bottom: 2rem;
+      
+}
+
+.content{
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content:center;  */
+    align-items: center; 
+    /* background-image: url(../images/Background-shape.png);
+    background-size:cover; */
+    /* height: 500px;
+    width: 500px; */
+
+    
+}
+
+
+.content p{
+    width: 400px;
+    padding-top: 5rem;
+}
+
+
+/* .workshop img{
+    height: 20rem;
+    width: 20rem;
+    padding-top: 2rem;
+    
+} */
+
+.images{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: end; */
+    padding-bottom: 6rem;
+    padding-right: 3rem;
+    place-items: center;
+    height: 400px;
+    width: 350px;
+}
+
+.grp_project img{
+    height: auto;
+    width: 100%; 
+    /* margin-top: 2rem; */
+    border-radius: 25%;
+    margin-left: 100px;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .grp_project{
+        padding-top: 50px;
+    }
+    .images{
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (min-width: 700px) {
+  #about .about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+}
+  }
+
+
+#experience h2{
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+#experience a{
+    color: #483880;
+    font-weight: bold;
+}
+
+.feature{
+    color: black;
+}
+
+.feature img{
+    height: 200px;
+    width: 250px;
+}
+
+/* .mid{
+    margin-top: 4rem;
+} */
+
+
+    
+/* Header */
+
+
+/* Sections */
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 1.5rem;
+}
