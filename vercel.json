@@ -1,5 +1,12 @@
 {
     "version": 2,
-    "builds":[{"src": "views/index.ejs", "use": "@vercel/node"}],
+    "builds":[{"src": "app.js", 
+    "use": "@vercel/node",
+    "config": {
+        "includeFiles": [
+          "views/**",
+          "public/**"]}
+          }],
+
     "routes":[{"src": "/(.*)", "dest": "app.js"}]
 }
