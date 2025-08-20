@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "app.js": { "runtime": "nodejs20.x" }
-  },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/app.js" }
-  ]
+    "version": 2,
+    "rewrites":[{"source": "/(*)", "destination": "/"}],
 }
-
