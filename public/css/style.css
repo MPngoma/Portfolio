@@ -16,11 +16,11 @@ body {
     background-color: #0e2148;
 }
 
-
-
-/* #main{
-    height: 100vh;
-} */
+#about p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 500px;
+}
 
 h1, h2{
     color: #e3d095;
@@ -87,12 +87,70 @@ h1, h2{
       
 }
 
+/* About Me Section */
+.microsoft_pic{
+    gap: 2rem;
+    height: auto;
+    width: 70%;
+    margin-bottom: 2rem;
+    border-radius: 5%;
+}
+
+.microsoft_goals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.microsoft_goals p{
+    width: 600px;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.cougarAI_pic{
+    height: 375px;
+    width: 500px;
+    border-radius: 5%;
+}
+
+.org1, .org2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.org2 p{
+    /* width: 400px; */
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.volunteering_pic{
+    height: 375px;
+    width: 450px;
+    border-radius: 5%;
+}
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------- */
+
 .content{
 
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content:center;  */
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    /* align-items: center;  */
     /* background-image: url(../images/Background-shape.png);
     background-size:cover; */
     /* height: 500px;
@@ -102,36 +160,23 @@ h1, h2{
 }
 
 
-.content p{
-    width: 400px;
-    padding-top: 5rem;
-}
-
-
-/* .workshop img{
-    height: 20rem;
-    width: 20rem;
-    padding-top: 2rem;
-    
-} */
-
 .images{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: end; */
-    padding-bottom: 6rem;
-    padding-right: 3rem;
-    place-items: center;
-    height: 400px;
-    width: 350px;
+    display: flex; 
+    flex-direction: column;
+    align-items: right;
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+    margin-right: 3rem;
+    height: auto;
+    width: 75%;
 }
 
-.grp_project img{
+.grp_project_img{
     height: auto;
     width: 100%; 
     /* margin-top: 2rem; */
-    border-radius: 25%;
-    margin-left: 100px;
+    border-radius: 5%;
+    margin-left: 3rem;
     align-items: center;
 }
 
@@ -189,9 +234,16 @@ h1, h2{
 
 /* Footer */
 footer {
-    text-align: center;
+    
     background: #333;
     color: white;
     padding: 10px;
     margin-top: 1.5rem;
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 0.9rem;
 }
