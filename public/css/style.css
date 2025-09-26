@@ -4,6 +4,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 @import url("https://use.typekit.net/shd0xtp.css");
@@ -93,10 +94,36 @@ h1, h2{
     line-height: 1.6;
     /* width: 500px; */
 }
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+}
 
 .content p{
     width: 500px;
 }
+
+.images{
+    display: flex; 
+    flex-direction: column;
+    align-items: right;
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+    margin-right: 3rem;
+    height: auto;
+    width: 75%;
+}
+
+.grp_project_img{
+    height: auto;
+    width: 100%; 
+    /* margin-top: 2rem; */
+    border-radius: 5%;
+    margin-left: 3rem;
+    align-items: center;
+}
+
 .microsoft_pic{
     gap: 2rem;
     height: auto;
@@ -151,6 +178,11 @@ h1, h2{
 
 /* ------------- My Experience Section --------------- */
 
+.section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .project{
     margin-left: 3.5rem;
     margin-right: 3.5rem;
@@ -169,70 +201,6 @@ h1, h2{
     width: 250px;
 }
 
-/* ------------------------------------------------------------------------- */
-.content{
-
-    display: flex;
-    flex-direction: column;
-    justify-content:center; 
-    /* background-image: url(../images/Background-shape.png);
-    background-size:cover; */
-    /* height: 500px;
-    width: 500px; */
-
-    
-}
-
-
-.images{
-    display: flex; 
-    flex-direction: column;
-    align-items: right;
-    margin-bottom: 4rem;
-    padding-top: 3rem;
-    margin-right: 3rem;
-    height: auto;
-    width: 75%;
-}
-
-.grp_project_img{
-    height: auto;
-    width: 100%; 
-    /* margin-top: 2rem; */
-    border-radius: 5%;
-    margin-left: 3rem;
-    align-items: center;
-}
-
-@media (max-width: 900px) {
-    /* .grp_project{
-        padding-top: 50px;
-    } */
-    .content p{
-        width: 300px;
-    }
-    .images{
-        margin-bottom: 50px;
-    }
-    .org2 p{
-        width: 300px;
-        padding-top: 1rem;
-        margin-left: 1rem;
-        text-align: center;
-    }
-}
-
-
-@media (min-width: 700px) {
-  #about .about-me{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    
-}
-  }
-
-
 #experience h2{
     width: 100%;
     color: black;
@@ -244,20 +212,17 @@ h1, h2{
     font-weight: bold;
 }
 
+/* ------------------------------------------------------------------------- */
 
-/* .mid{
-    margin-top: 4rem;
-} */
-
-
+@media (min-width: 700px) {
+  #about .about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     
-/* Header */
+}
+  }
 
-
-/* Sections */
-
-
-/* Footer */
 footer {
     
     background: #333;
@@ -271,4 +236,94 @@ footer p {
     width: 100%;
     margin: 0;
     font-size: 0.9rem;
+}
+/* ---------------- Responsive Design -------------------- */
+@media (max-width: 400px) {
+    .section-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .section-header h2{
+        text-align: center;
+        font-size: 2.5rem;
+        width: 100%;
+    }   
+
+    .profile img {
+        height: 7rem;
+        width: 7rem; 
+    }
+    .titles h3 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    .titles a {
+        font-size: 0.5rem;
+    }
+    .titles a .github-logo {
+        height: 25px;
+        width: 80px;
+    }
+
+    #about p {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .microsoft_goals p {
+        width: 400px;
+    }
+
+    .cougarAI_pic {
+        height: auto;
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+     h1, h2 {
+        font-size: 3rem;
+        width: 100%;
+    }
+
+    .profile img {
+        height: 10rem;
+        width: 10rem; 
+    }
+    .titles h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .titles a {
+        font-size: 0.7rem;
+    }
+    .titles a .github-logo {
+        height: 30px;
+        width: 100px;
+    }
+
+    #about p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .microsoft_goals p {
+        width: 500px;
+    }
+
+    .cougarAI_pic {
+        height: auto;
+        width: 100%;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .feature p{
+        width: 100%;
+    }
 }
