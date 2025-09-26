@@ -8,6 +8,10 @@ header {
 
 @import url("https://use.typekit.net/shd0xtp.css");
 
+.nav a{
+    color:#f7f6f2;
+}
+
 body {
     font-family:'Ailero', sans-serif;
     margin: 0;
@@ -16,11 +20,6 @@ body {
     background-color: #0e2148;
 }
 
-#about p{
-    font-size: 1.2rem;
-    line-height: 1.6;
-    width: 500px;
-}
 
 h1, h2{
     color: #e3d095;
@@ -87,7 +86,17 @@ h1, h2{
       
 }
 
-/* About Me Section */
+/* ---------- About Me Section ----------- */
+
+#about p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    /* width: 500px; */
+}
+
+.content p{
+    width: 500px;
+}
 .microsoft_pic{
     gap: 2rem;
     height: auto;
@@ -105,9 +114,9 @@ h1, h2{
 }
 
 .microsoft_goals p{
-    width: 600px;
     padding-top: 1rem;
     text-align: center;
+    width: 700px;
 }
 
 .cougarAI_pic{
@@ -126,8 +135,9 @@ h1, h2{
 }
 
 .org2 p{
-    /* width: 400px; */
+    width: 450px;
     padding-top: 1rem;
+    margin-left: 1rem;
     text-align: center;
 }
 
@@ -137,20 +147,34 @@ h1, h2{
     border-radius: 5%;
 }
 
-
-
-
-
-
-
 /* ------------------------------------------------------------------------- */
 
+/* ------------- My Experience Section --------------- */
+
+.project{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+}
+
+.feature{
+    color: black;
+}
+
+.feature img{
+    height: 200px;
+    width: 250px;
+}
+
+.feature p{
+    width: 250px;
+}
+
+/* ------------------------------------------------------------------------- */
 .content{
 
     display: flex;
     flex-direction: column;
     justify-content:center; 
-    /* align-items: center;  */
     /* background-image: url(../images/Background-shape.png);
     background-size:cover; */
     /* height: 500px;
@@ -180,12 +204,21 @@ h1, h2{
     align-items: center;
 }
 
-@media (max-width: 700px) {
-    .grp_project{
+@media (max-width: 900px) {
+    /* .grp_project{
         padding-top: 50px;
+    } */
+    .content p{
+        width: 300px;
     }
     .images{
         margin-bottom: 50px;
+    }
+    .org2 p{
+        width: 300px;
+        padding-top: 1rem;
+        margin-left: 1rem;
+        text-align: center;
     }
 }
 
@@ -211,14 +244,6 @@ h1, h2{
     font-weight: bold;
 }
 
-.feature{
-    color: black;
-}
-
-.feature img{
-    height: 200px;
-    width: 250px;
-}
 
 /* .mid{
     margin-top: 4rem;
@@ -238,7 +263,7 @@ footer {
     background: #333;
     color: white;
     padding: 10px;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
 }
 
 footer p {
