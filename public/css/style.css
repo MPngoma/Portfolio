@@ -9,6 +9,10 @@ header {
 
 @import url("https://use.typekit.net/shd0xtp.css");
 
+section#main {
+   margin-bottom: 2rem;
+}
+
 .nav a{
     color:#f7f6f2;
 }
@@ -27,29 +31,39 @@ h1, h2{
     font-family: 'IBM Plex Serif', serif;
     font-weight: normal;
     font-size: 4rem;
-    width: 500px;
+    width: 100%;
+    text-align: center;
 }
 
 .profile{
-    display: flex;
-    align-items: center;
+    display: flex; 
+    /* flex-direction: column; */
+    align-items: flex-start;
     padding-top: 3rem;
+    justify-content: center;
+    /* padding-right: 3rem; */
+    /* margin: 0 auto; */
 }
 .profile img{
-    height: 12rem;
-    width: 12rem;
+    height: auto;
+    width: 350px;
+    border-radius: 5px;
+    margin-right:5rem;
 }
 
 .titles{
     margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items:start;
+    /* display: flex;
+    flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    
+    float: right;
+    
 }
 
 .titles h3{
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
     font-size: 1.8rem;
 }
 
@@ -220,6 +234,10 @@ h1, h2{
     gap: 20px;   
 }
 
+section#main {
+   margin-bottom: 100vh;
+}
+
   }
 
 footer {
@@ -237,6 +255,7 @@ footer p {
 }
 /* ---------------- Responsive Design -------------------- */
 @media (max-width: 400px) {
+
     .section-header{
         display: flex;
         flex-direction: column;
@@ -286,9 +305,17 @@ footer p {
         width: 100%;
     }
 
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .profile img {
-        height: 10rem;
-        width: 10rem; 
+        height: auto;
+        width: 80%; 
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
     .titles h3 {
         font-size: 1.5rem;
