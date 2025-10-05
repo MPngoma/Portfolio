@@ -9,10 +9,6 @@ header {
 
 @import url("https://use.typekit.net/shd0xtp.css");
 
-section#main {
-   margin-bottom: 2rem;
-}
-
 .nav a{
     color:#f7f6f2;
 }
@@ -228,15 +224,15 @@ h1, h2{
 /* ------------------------------------------------------------------------- */
 
 @media (min-width: 700px) {
-  #about .about-me{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;   
-}
+    #about .about-me{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;   
+    }
 
-section#main {
-   margin-bottom: 100vh;
-}
+    section#main {
+        height: 100vh;
+    }
 
   }
 
